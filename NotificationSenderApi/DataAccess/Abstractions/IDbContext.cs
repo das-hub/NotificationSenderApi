@@ -1,6 +1,6 @@
 ﻿using NotificationSenderApi.DataAccess.Models;
 
-namespace NotificationSenderApi.DataAccess;
+namespace NotificationSenderApi.DataAccess.Abstractions;
 
 public interface IDbContext
 {

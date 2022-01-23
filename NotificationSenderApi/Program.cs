@@ -1,5 +1,6 @@
 using System.Text.Json.Serialization;
 using NotificationSenderApi.DataAccess;
+using NotificationSenderApi.DataAccess.Abstractions;
 using NotificationSenderApi.Services.Notifications;
 using NotificationSenderApi.Services.Notifications.Abstractions;
 using NotificationSenderApi.Services.SendHandlers;

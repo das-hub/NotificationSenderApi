@@ -1,4 +1,4 @@
-﻿using NotificationSenderApi.DataAccess;
+﻿using NotificationSenderApi.DataAccess.Abstractions;
 using NotificationSenderApi.DataAccess.Models;
 using NotificationSenderApi.Services.SendHandlers.Abstractions;
 

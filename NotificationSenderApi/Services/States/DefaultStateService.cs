@@ -1,4 +1,4 @@
-﻿using NotificationSenderApi.DataAccess;
+﻿using NotificationSenderApi.DataAccess.Abstractions;
 using NotificationSenderApi.DataAccess.Models;
 using NotificationSenderApi.Enums;
 using NotificationSenderApi.Rpc;
@@ -22,7 +22,7 @@ public class DefaultStateService : IStateService
         if (registry is null) return Task.FromResult(new SendResultRpc
         {
             Success = false,
-            Message = "Message not found"
+            Message = $"Notification with ID=[{notificationId}] not found"
         });
 
         NotificationBase notification = registry.OsTypes switch
@@ -35,7 +35,7 @@ public class DefaultStateService : IStateService
         if (notification is null) return Task.FromResult(new SendResultRpc
         {
             Success = false,
-            Message = "Message not found"
+            Message = $"Notification with ID=[{notificationId}] not found"
         });
         
         return Task.FromResult<SendResultRpc>(new SendResultRpc

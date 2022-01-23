@@ -1,8 +1,9 @@
 ﻿using NotificationSenderApi.DataAccess.Enums;
+using NotificationSenderApi.DataAccess.Models.Abstractions;
 
 namespace NotificationSenderApi.DataAccess.Models;
 
-public class NotificationBase : INotification
+public abstract class NotificationBase : INotification
 {
     public virtual Guid Id { get; set; } = Guid.NewGuid();
     public virtual State State { get; set; } = State.NotDelivered;

@@ -1,4 +1,5 @@
-﻿using NotificationSenderApi.Enums;
+﻿using NotificationSenderApi.DataAccess.Models.Abstractions;
+using NotificationSenderApi.Enums;
 
 namespace NotificationSenderApi.DataAccess.Models;
 

@@ -1,6 +1,6 @@
 ﻿using NotificationSenderApi.DataAccess.Enums;
 
-namespace NotificationSenderApi.DataAccess.Models;
+namespace NotificationSenderApi.DataAccess.Models.Abstractions;
 
 public interface INotification : IEntity
 {
